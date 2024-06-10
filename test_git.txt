@@ -1,3 +1,9 @@
+
 update merge txt
 test the git merge
 how i do what
+
+this is a brach of test
+who u can do what
+the merge is not a test
+
