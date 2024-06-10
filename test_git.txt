@@ -1,0 +1,3 @@
+update merge txt
+test the git merge
+how i do what
