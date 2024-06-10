@@ -1,0 +1,13 @@
+apiVersion: tutorial.demo.com/v1
+kind: Demo
+metadata:
+  labels:
+    app.kubernetes.io/name: demo
+    app.kubernetes.io/managed-by: kustomize
+  name: demo-sample
+  namespace: demo
+spec:
+  # TODO(user): Add fields here
+  image: nginx:1.22
+  svcName: demo-ng
+  replicas: 3

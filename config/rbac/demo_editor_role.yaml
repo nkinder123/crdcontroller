@@ -1,0 +1,27 @@
+# permissions for end users to edit demoes.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: demo
+    app.kubernetes.io/managed-by: kustomize
+  name: demo-editor-role
+rules:
+- apiGroups:
+  - tutorial.demo.com
+  resources:
+  - demoes
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - tutorial.demo.com
+  resources:
+  - demoes/status
+  verbs:
+  - get
